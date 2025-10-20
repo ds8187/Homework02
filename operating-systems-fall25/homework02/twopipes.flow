@@ -1,0 +1,28 @@
+node=cat_foo
+command=cat foo.txt
+
+node=sed_o_u
+command=sed 's/o/u/g'
+
+node=tails
+command=tail
+
+pipe=foo_to_fuu
+from=cat_foo
+to=sed_o_u
+
+pipe=test
+from=cat_foo
+to=tails
+
+concatenate=foo_then_fuu
+parts=2
+part_0=test
+part_1=foo_to_fuu
+
+node=word_count
+command=wc
+
+pipe=shenanigan
+from=foo_then_fuu
+to=word_count
