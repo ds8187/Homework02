@@ -100,3 +100,8 @@ hasCycleUtil:
     - recursively explore next block
     - if there are no outgoing blocks, ensure this is a valid terminal block. a node to execute or file to output to
 
+Test Case:
+    - Call foo_then_fuu
+    - This test case will fail for most as many people will not consider part_0 of the concat succeeding but part_1 failing and returning a standard error shenanigan will never call, nor word_count.
+
+
