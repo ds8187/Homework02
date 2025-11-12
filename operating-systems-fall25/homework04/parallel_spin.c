@@ -83,7 +83,7 @@ int main(int argc, char **argv) {
   long i;
   pthread_t *threads;
   double start, end;
-  pthread_spin_init(&lock, NULL);
+  pthread_spin_init(&lock, PTHREAD_PROCESS_PRIVATE);
 
   if (argc != 2) {
     panic("usage: ./parallel_hashtable <num_threads>");
