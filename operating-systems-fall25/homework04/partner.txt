@@ -1,0 +1,4 @@
+Student01: Tomas Echeverri
+Student01_NetID: te2130
+Student02: Diego Segundo
+Student02_NetID: ds8187
